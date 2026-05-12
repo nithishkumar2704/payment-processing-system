@@ -1,0 +1,17 @@
+# Maven
+target/
+
+# IntelliJ
+.idea/
+*.iml
+
+# Logs
+*.log
+
+# Environment files
+.env
+application-prod.yml
+
+# OS files
+.DS_Store
+Thumbs.db
