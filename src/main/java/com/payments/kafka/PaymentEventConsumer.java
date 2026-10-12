@@ -11,7 +11,10 @@ import org.springframework.kafka.support.KafkaHeaders;
 import org.springframework.messaging.handler.annotation.*;
 import org.springframework.stereotype.Component;
 import org.springframework.transaction.annotation.Transactional;
-@Component @Profile("!local & !prod") @RequiredArgsConstructor @Slf4j
+@Component
+@Profile("!local & !prod") 
+@RequiredArgsConstructor 
+@Slf4j
 public class PaymentEventConsumer {
     private final ProcessedEventRepository processedEventRepo;
     private final ObjectMapper objectMapper;
