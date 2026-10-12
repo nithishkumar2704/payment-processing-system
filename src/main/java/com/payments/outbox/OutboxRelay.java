@@ -9,7 +9,10 @@ import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Component;
 import org.springframework.transaction.annotation.Transactional;
 import java.util.List;
-@Component @Profile("!prod") @RequiredArgsConstructor @Slf4j
+@Component 
+@Profile("!prod") 
+@RequiredArgsConstructor 
+@Slf4j
 public class OutboxRelay {
     private final OutboxEventRepository outboxRepo;
     private final KafkaTemplate<String, String> kafkaTemplate;
